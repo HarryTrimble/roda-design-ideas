@@ -1,0 +1,173 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Reports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Activities</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Budgets</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Exports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Organisations</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-three-quarters">
+      
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Activity data uploaded
+          </h1>
+          <div class="govuk-panel__body">
+            Your reference number<br><strong>HDJ2123F</strong>
+          </div>
+        </div>
+        <p class="govuk-body">We have sent you a confirmation email.</p>
+
+      <table class="govuk-table" id="error-details">
+        <caption class="govuk-table__caption govuk-table__caption--m">10 activities uploaded</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Activity</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text">RODA Identifier</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text">Date uploaded</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">ODA BEIS</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK1</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Transform</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK2</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Ad-hoc GC</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK3</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">SFC - GCRF</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK4</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">ODA webbs</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK5</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">GLobal Charity</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK6</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UUKi Delivert</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK7</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">HEFCW</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK8</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">GLobal Charity</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK9</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UUKi Delivert</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK10</td>
+            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p class="govuk-body">
+          Describe what happens next
+        </p>
+
+        
+
+    </div>
+{% endblock %}

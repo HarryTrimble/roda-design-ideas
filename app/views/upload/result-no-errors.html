@@ -1,0 +1,173 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Upload results - errors
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Reports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Activities</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Budgets</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Exports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Organisations</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-three-quarters">
+      
+      <div class="govuk-error-summary" data-module="govuk-error-summary" style="border: 5px solid #28a197;">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            No errors found
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                There were no formatting errors found in the uploaded CSV.
+              </li>
+              <li>
+                <a href="#check-details" style="color: #0b0c0c;">See CSV details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="govuk-heading-l">Check activity data before publishing</h1>
+      <table class="govuk-table" id="error-details">
+        <caption class="govuk-table__caption govuk-table__caption--m">10 activities in CVS</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Activity</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text">RODA Identifier</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric"></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">ODA BEIS</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK1</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Transform</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK2</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Ad-hoc GC</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK3</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">SFC - GCRF</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK4</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">ODA webbs</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK5</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">GLobal Charity</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK6</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UUKi Delivert</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK7</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">HEFCW</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK8</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">GLobal Charity</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK9</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UUKi Delivert</th>
+            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK10</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              <a class="govuk-link" href="#">
+                View<span class="govuk-visually-hidden"> activity</span>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+        <h2 class="govuk-heading-m">Now upload activity data</h2>
+        <p class="govuk-body">By uploading this, it will be findable by others users of the service.</p>
+        <form action="/upload/confirmation" method="post" novalidate>
+          <input type="hidden" name="answers-checked" value="true">
+          <button class="govuk-button" data-module="govuk-button">
+            Accept and upload
+          </button>
+        </form>
+
+    </div>
+{% endblock %}
