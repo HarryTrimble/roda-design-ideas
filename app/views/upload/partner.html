@@ -1,0 +1,68 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Reports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Activities</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Budgets</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Exports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Organisations</a>
+        </li>
+      </ul>
+    </div>
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">Upload activity data</span>
+    <h1 class="govuk-heading-l" style="margin-bottom: 15px;">What partner organisation are you uploading activity data for?</h1>
+    <select class="govuk-select" name="choose-country" id="choose-country">
+      <option value="territory:AE-AZ"></option>
+      <option value="territory:AE-AZ">Academy of Medical Sciences</option>
+      <option value="country:AF">Arts and Humanities Research Council</option>
+      <option value="territory:AE-AJ">BEIS finance </option>
+      <option value="territory:XQZ">Biotechnology & Biological Sciences Research Council</option>
+      <option value="country:AL">British Academy</option>
+      <option value="country:ZM">British Council </option>
+      <option value="country:ZW">Economic & Social Research Council  </option>
+      <option value="territory:AX">Engineering & Physical Sciences Research Council</option>
+      <option value="country:ZM">Innovate UK</option>
+      <option value="country:ZM">Medical Research Council</option>
+      <option value="country:ZM">Met Office</option>
+      <option value="country:ZM">Natural Environment Research Council</option>
+      <option value="country:ZM">Royal Academy of Engineering</option>
+      <option value="country:ZM">Royal Society</option>
+      <option value="country:ZM">Science and Technology Facilities Council</option>
+      <option value="country:ZM">UK Research and Innovation  </option>
+      <option value="country:ZM">UK Space Agency </option>
+    </select>
+
+      <br>
+
+      <a href="/upload/oda-or-not" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Continue
+      </a>
+
+  </div>
+</div>
+
+{% endblock %}

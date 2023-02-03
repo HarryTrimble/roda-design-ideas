@@ -5,4 +5,6 @@
 
 // Add extra styles here
 
-#sign-out-bottom {float: right;}
+.autocomplete__wrapper * {
+  @include govuk-typography-common();
+}

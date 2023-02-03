@@ -3,21 +3,14 @@
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
 //
 
-const accessibleAutocomplete = require('accessible-autocomplete')
-
 window.GOVUKPrototypeKit.documentReady(() => {
   // Add JavaScript here
+  
+  let selectElement = document.querySelector('#choose-country')
 
-const countries = [
-  'France',
-  'Germany',
-  'United Kingdom'
-]
-
-accessibleAutocomplete({
-  element: document.querySelector('#my-autocomplete-container'),
-  id: 'my-autocomplete', // To match it to the existing <label>.
-  source: countries
-})
+  accessibleAutocomplete.enhanceSelectElement({
+    defaultValue: '',
+    selectElement: selectElement
+  })
 
 })
