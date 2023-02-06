@@ -1,7 +1,7 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Upload confirmation
 {% endblock %}
 
 {% block beforeContent %}
@@ -49,125 +49,117 @@
         <p class="govuk-body">We have sent you a confirmation email.</p>
 
       <table class="govuk-table" id="error-details">
-        <caption class="govuk-table__caption govuk-table__caption--m">10 activities uploaded</caption>
+        <caption class="govuk-table__caption govuk-table__caption--m">9 activities uploaded</caption>
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
             <th scope="col" class="govuk-table__header">Activity</th>
-            <th scope="col" class="govuk-table__header govuk-table__header--text">RODA Identifier</th>
-            <th scope="col" class="govuk-table__header govuk-table__header--text">Date uploaded</th>
-            <th scope="col" class="govuk-table__header govuk-table__header--numeric"></th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text">Actuals</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text">Refunds</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Date uploaded</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">ODA BEIS</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK1</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
             </td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Transform</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK2</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
             </td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Ad-hoc GC</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK3</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">DfE NI - GC</th>
+            <td class="govuk-table__cell govuk-table__cell--text">10</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
             </td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">SFC - GCRF</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK4</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--text">22</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
             </td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">ODA webbs</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK5</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">33</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
-            </td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">GLobal Charity</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK6</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
-            <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
-            </td>
-          </tr>
-          <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">UUKi Delivert</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK7</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
-            <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
             </td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">HEFCW</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK8</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <td class="govuk-table__cell govuk-table__cell--text">44</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
             </td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">GLobal Charity</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK9</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <th scope="row" class="govuk-table__header">Global Charity</th>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
             </td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">UUKi Delivert</th>
-            <td class="govuk-table__cell govuk-table__cell--text">GCRF-BF-7TNK10</td>
-            <td class="govuk-table__cell govuk-table__cell--text">Just now</td>
+            <th scope="row" class="govuk-table__header">UUKi Delivery</th>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">10</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">              
-              <a class="govuk-link" href="#">
-                View<span class="govuk-visually-hidden"> activity</span>
-              </a>
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total</th>
+            <td class="govuk-table__cell govuk-table__cell--text">£76</td>
+            <td class="govuk-table__cell govuk-table__cell--text">£43</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
             </td>
           </tr>
         </tbody>
       </table>
 
-        <h2 class="govuk-heading-m">What happens next</h2>
-        <p class="govuk-body">
-          Describe what happens next
-        </p>
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p class="govuk-body">
+        The report will be submitted to data assurance team at BEIS in 24 days. You have until then to make any changes to the report. 
+      </p>
 
-        
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important!
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            You have 24 days left to make any more updates to the report. 
+            <a class="govuk-notification-banner__link" href="#">View current report</a>.
+          </p>
+        </div>
+      </div>
 
     </div>
 {% endblock %}
