@@ -7,16 +7,54 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
-    <h1 class="govuk-heading-xl">
+    <h1 class="govuk-heading-l">
       Design ideas for RODA service
     </h1>
 
-    <p><a href="https://report-official-development-assistance.service.gov.uk">report-official-development-assistance.service.gov.uk</p>
+    <p class="govuk-body">
+      Live service:
+      <a class="govuk-link" href="https://report-official-development-assistance.service.gov.uk">report-official-development-assistance.service.gov.uk
+      </a>
+    </p>
+
+    <br><br>
+
   </div>
+</div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Upload activity data</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="/upload/start">Start page</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/upload/partner">Select partner org</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/upload/oda-or-not">Select ODA or non-ODA</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/upload/download-template">Download template</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/upload/result-errors">Error messages</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="/upload/confirmation">Confirmation</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Reports</h2>
+    <p class="govuk-body"><a class="govuk-link" href="/report/approved">Approved report</a></p>
+  </div>
+
 </div>
 
 {% endblock %}
