@@ -63,39 +63,39 @@
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
             <th scope="col" class="govuk-table__header">Activity</th>
-            <th scope="col" class="govuk-table__header govuk-table__header--text">Error description</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text govuk-!-width-one-half">Error description</th>
             <th scope="col" class="govuk-table__header govuk-table__header--numeric">Where in CSV</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">ODA BEIS</th>
-            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Refund can’t be zero when actual is blank</td>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Refund can’t be zero when Actual is blank. Comments can be added with the CVS template.</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">Row 2, Col F–G</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Ad-hoc GC</th>
-            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and refund are both filled</td>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and Refund can’t both have a value. Only one cell can.</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">Row 4, Col F–G</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">DfE NI - GC</th>
-            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and refund are both filled</td>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Refund can’t be zero if there is a value in Actual. Refund cell must be blank.</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">Row 5, Col F–G</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">HEFCW</th>
-            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and refund are both filled</td>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and Refund are both filled. One cell must be blank.</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">Row 8, Col F–G</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">GLobal Charity</th>
-            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and refund are both blank</td>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">There is only a comment. A value is needed for either Actual or Refund.</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">Row 9, Col F–G</td>
           </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">UUKi Delivert</th>
-            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and refund are both filled</td>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual can’t be zero if there is a value in Refund. Actual should be blank.</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">Row 10, Col F–G</td>
           </tr>
         </tbody>
