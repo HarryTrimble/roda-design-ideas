@@ -123,130 +123,171 @@
 
     <br>
 
-      <!-- budgets section -->
-      <div class="govuk-summary-card" id="activities">
-        <div class="govuk-summary-card__title-wrapper">
-          <h2 class="govuk-summary-card__title">Budgets</h2>
-        </div>
-        <div class="govuk-summary-card__content">
-          <dl class="govuk-summary-list">
-
-            <table class="govuk-table">
-              <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                  <th scope="col" class="govuk-table__header">Financial year</th>
-                  <th scope="col" class="govuk-table__header">Budget amount</th>
-                  <th scope="col" class="govuk-table__header">Revisions</th>
-                  <th scope="col" class="govuk-table__header">Type</th>
-                  <th scope="col" class="govuk-table__header">Providing organisation</th>
-                </tr>
-              </thead>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2023-2024</th>
-                  <td class="govuk-table__cell">£76,000.00</td>
-                  <td class="govuk-table__cell">
-                    <a class="govuk-link" href="/report/revisions">
-                      2 revisions<span class="govuk-visually-hidden"> view</span>
-                    </a>
-                  </td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2022-2023</th>
-                  <td class="govuk-table__cell">£152,000.00</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2021-2022</th>
-                  <td class="govuk-table__cell">£158,299.41</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2020-2021</th>
-                  <td class="govuk-table__cell">£141,777.90</td>
-                  <td class="govuk-table__cell">
-                    <a class="govuk-link" href="#">
-                      1 revision<span class="govuk-visually-hidden"> view</span>
-                    </a>
-                  </td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2019-2020</th>
-                  <td class="govuk-table__cell">£133,873.61</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2018-2019</th>
-                  <td class="govuk-table__cell">£161,716.00</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2017-2018</th>
-                  <td class="govuk-table__cell">£153,589.00</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>                
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2016-2017</th>
-                  <td class="govuk-table__cell">£154,240.00</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2015-2016</th>
-                  <td class="govuk-table__cell">£144,756.00</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">FY 2014-2015</th>
-                  <td class="govuk-table__cell">£70,500.00</td>
-                  <td class="govuk-table__cell">None</td>
-                  <td class="govuk-table__cell">Direct</td>
-                  <td class="govuk-table__cell">BEIS
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </dl>
-        </div>
+    <div class="govuk-summary-card">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Budgets</h2>
+        <ul class="govuk-summary-card__actions">
+          <li class="govuk-summary-card__action"> <a class="govuk-link" href="#">
+              Add new<span class="govuk-visually-hidden"> budget</span>
+            </a>
+          </li>
+          <li class="govuk-summary-card__action"> <a class="govuk-link" href="/report/select-budget-to-edit">
+              Edit<span class="govuk-visually-hidden"> a existing budget</span>
+            </a>
+          </li>
+        </ul>
       </div>
+          <div class="govuk-summary-card__content">
+            <dl class="govuk-summary-list">
 
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Financial year</th>
+                    <th scope="col" class="govuk-table__header">Budget amount</th>
+                    <th scope="col" class="govuk-table__header">Revisions</th>
+                    <th scope="col" class="govuk-table__header">Type</th>
+                    <th scope="col" class="govuk-table__header">Providing organisation</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2023-2024</th>
+                    <td class="govuk-table__cell">£76,000.00</td>
+                    <td class="govuk-table__cell">
+                      <a class="govuk-link" href="/report/revisions">
+                        2 revisions<span class="govuk-visually-hidden"> view</span>
+                      </a>
+                    </td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2022-2023</th>
+                    <td class="govuk-table__cell">£152,000.00</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2021-2022</th>
+                    <td class="govuk-table__cell">£158,299.41</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2020-2021</th>
+                    <td class="govuk-table__cell">£141,777.90</td>
+                    <td class="govuk-table__cell">
+                      <a class="govuk-link" href="#">
+                        1 revision<span class="govuk-visually-hidden"> view</span>
+                      </a>
+                    </td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2019-2020</th>
+                    <td class="govuk-table__cell">£133,873.61</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2018-2019</th>
+                    <td class="govuk-table__cell">£161,716.00</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2017-2018</th>
+                    <td class="govuk-table__cell">£153,589.00</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>                
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2016-2017</th>
+                    <td class="govuk-table__cell">£154,240.00</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2015-2016</th>
+                    <td class="govuk-table__cell">£144,756.00</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">FY 2014-2015</th>
+                    <td class="govuk-table__cell">£70,500.00</td>
+                    <td class="govuk-table__cell">None</td>
+                    <td class="govuk-table__cell">Direct</td>
+                    <td class="govuk-table__cell">BEIS
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </dl>
+          </div>
     </div>
 
-    <!--
-    <div class="govuk-grid-column-two-thirds">
-      <h2 class="govuk-heading-m" id="download">Download</h2>
-      <p class="govuk-body">Download a CSV file to review offline. For guidance on reviewing and submitting your report, see the <a href="#" class="govuk-link">guidance in the help centre (opens in new tab)</a></p>
-      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-        Download report as CSV file
-      </button>
+    <!-- Forecasted spend section -->
+    <div class="govuk-summary-card">
+      <div class="govuk-summary-card__title-wrapper">
+        <h2 class="govuk-summary-card__title">Forecasted spend</h2>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Financial quarter</th>
+                <th scope="col" class="govuk-table__header">Amount</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">FQ2 2019-2020</th>
+                <td class="govuk-table__cell">£38,000.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">FQ3 2019-2020</th>
+                <td class="govuk-table__cell">£38,000.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">FQ4 2019-2020</th>
+                <td class="govuk-table__cell">£38,000.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">FQ1 2020-2021</th>
+                <td class="govuk-table__cell">£38,000.00</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">FQ2 2020-2021</th>
+                <td class="govuk-table__cell">£38,000.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </dl>
+      </div>
     </div>
-    -->
+
+    </div>
 
   </div>
 {% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+    <form action="/report/change-budget-amount" method="post" novalidate>
+          <div class="govuk-form-group">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <span class="govuk-caption-l">Edit an existing budget</span>
+              <h1 class="govuk-fieldset__heading">
+                What budget do you want to edit?
+              </h1>
+            </legend>
+            <label class="govuk-label" for="subject">
+              Choose budget
+            </label>
+            <div id="subject-hint" class="govuk-hint">
+              This has to be an exisiting budget
+            </div>
+            <select class="govuk-select" id="subject" name="subject" aria-describedby="subject-hint">
+              <option value="choose" selected>Choose budget</option>
+              <option value="2023-2024">FY 2023-2024</option>
+              <option value="2022-2023">FY 2022-2023</option>
+              <option value="2021-2022">FY 2021-2022</option>
+              <option value="2020-2021">FY 2020-2021</option>
+              <option value="2019-2020">FY 2019-2020</option>
+              <option value="2018-2019">FY 2018-2019</option>
+              <option value="2017-2018">FY 2017-2018</option>
+              <option value="2016-2017">FY 2016-2017</option>
+              <option value="2015-2016">FY 2015-2016</option>
+              <option value="2014-2015">FY 2014-2015</option>
+            </select>
+          </div>
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+
+    </div>
+
+  </div>
+{% endblock %}
