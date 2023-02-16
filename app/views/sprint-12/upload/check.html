@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <!--
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Reports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Activities</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Budgets</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Exports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Organisations</a>
+        </li>
+      </ul>
+    </div>
+    -->
+
+    <div class="govuk-grid-column-three-quarters">
+      
+      <span class="govuk-caption-l">Upload activity data</span>
+      <h1 class="govuk-heading-l">Check activity data before uploading</h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="file-upload-1">
+          Upload a spreadsheet containing activity data in CSV format.
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+      <p>Activity data will be automatically checked for formatting errors.</p>
+
+      <a href="result-errors" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Check and upload activity data
+      </a>
+
+    </div>
+{% endblock %}

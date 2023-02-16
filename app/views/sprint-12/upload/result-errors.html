@@ -1,0 +1,119 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Upload results - errors
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <!--
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Reports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Activities</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Budgets</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Exports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Organisations</a>
+        </li>
+      </ul>
+    </div>
+    -->
+
+    <div class="govuk-grid-column-three-quarters">
+      
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            Activty data couldn't be uploaded.
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                Six activities have errors with actuals and refund data.
+              </li>
+              <li>
+                <a href="#error-details">Error details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <table class="govuk-table" id="error-details">
+        <caption class="govuk-table__caption govuk-table__caption--m">Error details</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Activity</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text govuk-!-width-one-half">Error description</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Where in CSV</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">ODA BEIS</th>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Refund can’t be zero when Actual is blank. Added comments using the template.</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Row 2, Col F–G</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Ad-hoc GC</th>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and Refund can’t both have a number. One must be blank.</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Row 4, Col F–G</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">DfE NI - GC</th>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">
+            Refund can’t be zero if there is a value in Actual. Refund cell must be blank.</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Row 5, Col F–G</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">HEFCW</th>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual and Refund are both filled can’t both have a number. One of them must be a number and the other must be blank.</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Row 8, Col F–G</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">GLobal Charity</th>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">There is only a comment. A number is needed for either Actual or Refund.</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Row 9, Col F–G</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UUKi Delivert</th>
+            <td class="govuk-table__cell govuk-table__cell--text govuk-!-font-weight-bold" style="color: #d4351c;">Actual can’t be zero if there is a value in Refund. Actual should be blank.</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Row 10, Col F–G</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="govuk-heading-m">Try uploading again with errors fixed</h2>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="file-upload-1">
+          Upload a spreadsheet containing activity data in CSV format.
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+      <a href="confirmation" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Check and upload activity data
+      </a>
+
+    </div>
+{% endblock %}
