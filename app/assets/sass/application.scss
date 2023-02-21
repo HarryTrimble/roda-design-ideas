@@ -8,3 +8,10 @@
 .autocomplete__wrapper * {
   @include govuk-typography-common();
 }
+
+// Site Width
+$site-max-width: 1100px;
+
+.govuk-width-container {
+  max-width: $site-max-width;
+}

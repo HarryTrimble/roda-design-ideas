@@ -5,19 +5,38 @@
 {% endblock %}
 
 {% block beforeContent %}
-<div class="govuk-phase-banner">
-    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
-</div>
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "Current activities",
+      href: "#"
+    },
+    {
+      text: "AMS Delivery Costs - NF",
+      href: "#"
+    },
+    {
+      text: "Academy of Medical Sciences Staff delivery costs",
+      href: "#"
+    },
+    {
+      text: "Budget revisions - FY 2023-2024"
+    }
+  ]
+}) }}
 {% endblock %}
 
 {% block content %}
   <div class="govuk-grid-row">
-
     <div class="govuk-grid-column-two-thirds">
       <span class="govuk-caption-l">Academy of Medical Sciences Staff delivery costs</span>
-      <h1 class="govuk-heading-l">Budget revisions - FY 2023-2024</h1>
+      <h1 class="govuk-heading-xl">Budget revisions - FY 2023-2024</h1>
+      <p class="govuk-body-l"><strong>Current budget: </strong>£76,000.00</p>
     </div>
-
   </div>
 
   <div class="govuk-grid-row">
@@ -34,14 +53,14 @@
         </thead>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Current</th>
+            <th scope="row" class="govuk-table__header">Revision 2</th>
             <td class="govuk-table__cell">£76,000.00</td>
             <td class="govuk-table__cell">-£28,000.00</td>
             <td class="govuk-table__cell">1 June 2023</td>
             <td class="govuk-table__cell">Under spend due to a member of staff resigning and post unfilled.</td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">First revision</th>
+            <th scope="row" class="govuk-table__header">Revision 1</th>
             <td class="govuk-table__cell">£104,000.00 </td>
             <td class="govuk-table__cell">+£5,300.00</td>
             <td class="govuk-table__cell">20 March 2023</td>

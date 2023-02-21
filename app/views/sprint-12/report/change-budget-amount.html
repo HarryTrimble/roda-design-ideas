@@ -5,9 +5,29 @@
 {% endblock %}
 
 {% block beforeContent %}
-<div class="govuk-phase-banner">
-    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
-</div>
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "Current activities",
+      href: "#"
+    },
+    {
+      text: "AMS Delivery Costs - NF",
+      href: "#"
+    },
+    {
+      text: "Academy of Medical Sciences Staff delivery costs",
+      href: "#"
+    },
+    {
+      text: "Edit budget"
+    }
+  ]
+}) }}
 {% endblock %}
 
 {% block content %}
@@ -19,23 +39,12 @@
         <fieldset class="govuk-fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <span class="govuk-caption-l">Edit an existing budget</span>
-            <h1 class="govuk-fieldset__heading">
+            <h1 class="govuk-heading-xl">
               Edit budget for FY 2023-2024
             </h1>
           </legend>
-          <table class="govuk-table">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header"></th>
-                <th scope="col" class="govuk-table__header"></th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Current budget</th>
-                <td class="govuk-table__cell">£76,000.00</td>
-              </tr>
-            </tbody>
-          </table>
+          <p class="govuk-body-l"><strong>Current budget: </strong>£76,000.00</p>
+          
           <div class="govuk-form-group">
             <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label" for="cost">
                 What is the edited budget in pounds?
