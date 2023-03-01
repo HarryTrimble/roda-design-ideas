@@ -1,0 +1,45 @@
+{% extends "../layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirm delete activity
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "activity-level-c-beis"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+
+      <form action="organisation-ams-level-c-deleted-beis" method="post" novalidate>
+        <span class="govuk-caption-l">Deleting activity</span>
+        <h1 class="govuk-heading-xl">
+          Are you sure you want to delete Global policy workshop - One Health in South America?
+        </h1>
+        
+        <div class="govuk-!-margin-bottom-6">
+          <p class="govuk-body">If you delete this activity:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>all associated child activities will also be deleted</li>
+            <li>you may need to inform the partner organisation separately</li>
+          </ul>  
+        </div>
+
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button">
+            Confirm
+          </button>
+          <a class="govuk-link" href="activity-level-b-beis">Cancel</a>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+{% endblock %}

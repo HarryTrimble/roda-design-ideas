@@ -1,0 +1,46 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Report your official development assistance",
+  serviceUrl: "/",
+  navigation: [
+    {
+      href: "#1",
+      text: "Home"
+    },
+    {
+      href: "#2",
+      text: "Reports"
+    },
+    {
+      href: "#3",
+      text: "Activities"
+    },
+    {
+      href: "#4",
+      text: "Exports"
+    },
+    {
+      href: "#5",
+      text: "Sign out"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block stylesheets %}
+  {{ super() }}
+  <link href="/public/css/accessible-autocomplete.min.css" rel="stylesheet" type="text/css" />
+{% endblock %}

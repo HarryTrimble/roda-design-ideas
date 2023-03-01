@@ -1,0 +1,186 @@
+{% extends "../layouts/main.html" %}
+
+{% block pageTitle %}
+Global policy workshop - One Health in South America
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "Global Challenges Research Fund (GCRF)",
+      href: "#"
+    },
+    {
+      text: "Academy of Medical Sciences - Transition Activity & Delivery",
+      href: "#"
+    },
+    {
+      text: "Global policy workshop - One Health in South America"
+    }
+  ]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-panel__title" style="color: #0b0c0c;">
+      Global policy workshop - One Health in South America
+    </h1>
+
+    <table class="govuk-table">
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Partner organisation</th>
+          <td class="govuk-table__cell">ACADEMY OF MEDICAL SCIENCES</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Fund</th>
+          <td class="govuk-table__cell">Global Challenges Research Fund</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Activity status</th>
+          <td class="govuk-table__cell">Call/Activity open</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">RODA identifier</th>
+          <td class="govuk-table__cell">GCRF-AMS-C7J6B4J-H8MRXEK</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Partner organisation identifier</th>
+          <td class="govuk-table__cell">Global policy workshop - One Health in South America</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <button class="govuk-button" data-module="govuk-button" style="margin-bottom: 15px;">Download as XML</button>
+      </div>
+    </div>
+    
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              How to delete this activity?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Since you are a partner organisation user, you will need BEIS users's help to delete this activity. Please contact them via ...
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title" style="display:none;">
+        Contents
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#">
+            Financials
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#">
+            Other funding
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#">
+            Details
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#">
+            Child activities
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#">
+            Comments
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#">
+            Transfers
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#">
+            Change history
+          </a>
+        </li>
+      </ul>
+      <div class="govuk-tabs__panel" id="past-day">
+        <h2 class="govuk-heading-l">Financials</h2>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <table class="govuk-table">
+              <caption class="govuk-table__caption govuk-table__caption--m">Summary</caption>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Budget to date</th>
+                  <td class="govuk-table__cell">£1,346,751.92</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">spend to date</th>
+                  <td class="govuk-table__cell">£1,282,678.30</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Forecasted spend</th>
+                  <td class="govuk-table__cell">£453,889.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <table class="govuk-table" id="budgets" style="margin-bottom: 0;">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+          Budgets
+          </caption>
+        </table>
+
+
+        <table class="govuk-table" id="forecasted-spend" style="margin-bottom: 0;">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+          Forcasted spend
+          </caption>
+        </table>
+
+
+        <table class="govuk-table" id="actual-spend" style="margin-bottom: 0;">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+          Actual spend
+          </caption>
+        </table>
+
+        <table class="govuk-table" id="refunds" style="margin-bottom: 0;">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+          Refunds
+          </caption>
+        </table>
+
+        <table class="govuk-table" id="adjustments" style="margin-bottom: 0;">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+          Adjustments
+          </caption>
+        </table>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{% endblock %}

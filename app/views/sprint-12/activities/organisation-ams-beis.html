@@ -1,0 +1,263 @@
+{% extends "../layouts/main.html" %}
+
+{% block pageTitle %}
+Activities for Academy of Medical Sciences
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBreadcrumbs({
+items: [
+{
+text: "Home",
+href: "#"
+},
+{
+text: "ACADEMY OF MEDICAL SCIENCES..."
+}
+]
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Activities
+    </h1>
+
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h2 class="govuk-heading-m" style="margin-bottom: 0px;">Search for activities</h2>
+      </legend>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email">
+          Enter your search query
+        </label>
+        <div id="email-hint" class="govuk-hint">
+          You can search by RODA, Partner Organisation, BEIS, or IATI identifier, or by the activity's title
+        </div>
+        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+      </div>
+      <button type="submit" formnovalidate="formnovalidate" class="govuk-button" data-module="govuk-button"
+        data-prevent-double-click="true">Search</button>
+    </fieldset>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">
+      Activities for ACADEMY OF MEDICAL SCIENCES
+    </h2>
+    <h3 class="govuk-heading-m">
+      Add new activities
+    </h3>
+    <form class="button_to" method="post"
+      action="#">
+      <input class="govuk-button" type="submit"
+        value="Add new activity to Global Challenges Research Fund (GCRF)"><input type="hidden"
+        name="authenticity_token"
+        value=""
+        autocomplete="off"></form>
+    <form class="button_to" method="post"
+      action="#">
+      <input class="govuk-button" type="submit"
+        value="Add new activity to International Science Partnerships Fund"><input type="hidden"
+        name="authenticity_token"
+        value=""
+        autocomplete="off"></form>
+    <form class="button_to" method="post"
+      action="#">
+      <input class="govuk-button" type="submit" value="Add new activity to Newton Fund"><input type="hidden"
+        name="authenticity_token"
+        value=""
+        autocomplete="off"></form>
+    <form class="button_to" method="post"
+      action="#">
+      <input class="govuk-button" type="submit" value="Add new activity to Other ODA"><input type="hidden"
+        name="authenticity_token"
+        value=""
+        autocomplete="off"></form>
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="govuk-tabs">
+          <h2 class="govuk-tabs__title">
+            Activities
+          </h2>
+          <ul class="govuk-tabs__list" role="tablist">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+              <a class="govuk-tabs__tab" role="tab" aria-selected="true"
+                href="#">Current</a>
+            </li>
+            <li class="govuk-tabs__list-item" role="presentation">
+              <a class="govuk-tabs__tab" role="tab" aria-selected="false"
+                href="#">Historic</a>
+            </li>
+          </ul>
+          <div class="govuk-tabs__panel">
+            <h2 class="govuk-heading-l">
+              Current activities
+            </h2>
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+
+
+                <table class="govuk-table activities-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m govuk-!-margin-top-4">
+                    <a class="govuk-link"
+                      href="#">Global
+                      Challenges Research Fund (GCRF)</a>
+                  </caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <td>
+                        <table class="govuk-table">
+                          <tr>
+                            <th class="govuk-table__header govuk-!-width-one-half" scope="col">
+                              Name
+                            </th>
+                            <th class="govuk-table__header cell-2" scope="col">
+                              RODA Identifier
+                            </th>
+                            <th class="govuk-table__header cell-3" scope="col">
+                              Status
+                            </th>
+                            <th class="govuk-table__header cell-4" scope="col">
+                              <span class="govuk-visually-hidden">
+                                Actions
+                              </span>
+                            </th>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+
+                    <tr class="govuk-table__row table-tree-view__programme level-b">
+                      <td class="govuk-table__cell table-tree-view__parent-title level-b-td" scope="row">
+                        <details class="govuk-details" data-module="govuk-details">
+                          <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                              <table class="govuk-table">
+
+                                <tr class="govuk-table__row table-tree-view__project">
+                                  <td class="govuk-table__cell table-tree-view__parent-title govuk-!-width-one-half" scope="row">
+                                    <span class="table-tree-view__parent-button">
+                                      Academy of Medical Sciences - Transition Activity & Delivery
+                                    </span>
+                                  </td>
+                                  <td class="govuk-table__cell cell-2">
+                                    GCRF-AMS-C7J6B4J
+                                  </td>
+                                  <td class="govuk-table__cell cell-3">
+                                    Spend in progress
+                                  </td>
+                                  <td class="govuk-table__cell cell-4">
+                                    <a class="govuk-link"
+                                      href="activity-level-b-beis">View<span
+                                        class="govuk-visually-hidden">Academy of Medical Sciences - Transition Activity & Delivery</span></a>
+                                  </td>
+                                </tr>
+
+                              </table>
+                            </span>
+                          </summary>
+                          <div class="govuk-details__text level-c">
+
+                            <table class="govuk-table">
+                              <tr class="govuk-table__row table-tree-view__project level-c">
+                                <td class="govuk-table__cell table-tree-view__parent-title govuk-!-width-one-half level-c-cell-1" scope="row">
+                                  <span class="table-tree-view__parent-button">
+                                    Global policy workshop - One Health in South America
+                                  </span>
+                                </td>
+                                <td class="govuk-table__cell cell-2">
+                                  GCRF-AMS-C7J6B4J-H8MRXEK
+                                </td>
+                                <td class="govuk-table__cell cell-3">
+                                  Call/Activity open
+                                </td>
+                                <td class="govuk-table__cell cell-4">
+                                  <a class="govuk-link"
+                                    href="activity-level-c-beis">View<span
+                                      class="govuk-visually-hidden"> Global policy workshop - One Health in South
+                                      America</span></a>
+                                </td>
+                              </tr>
+
+                              <tr class="govuk-table__row table-tree-view__project">
+                                <td class="govuk-table__cell table-tree-view__parent-title govuk-!-width-one-half level-c-cell-1" scope="row">
+                                  <span class="table-tree-view__parent-button">
+                                    Capacity building workshops
+                                  </span>
+                                </td>
+                                <td class="govuk-table__cell cell-2">
+                                  GCRF-AMS-C7J6B4J-XE3AAE6
+                                </td>
+                                <td class="govuk-table__cell cell-3">
+                                  Planned
+                                </td>
+                                <td class="govuk-table__cell cell-4">
+                                  <a class="govuk-link"
+                                    href="#">View<span
+                                      class="govuk-visually-hidden"> Capacity building workshops</span></a>
+                                </td>
+                              </tr>
+                            </table>
+
+
+                          </div>
+                        </details>
+                      </td>
+                    </tr>
+                    
+                    <tr class="govuk-table__row table-tree-view__programme level-b">
+                      <td class="govuk-table__cell table-tree-view__parent-title level-b-td" scope="row">
+
+                              <table class="govuk-table">
+
+                                <tr class="govuk-table__row table-tree-view__project">
+                                  <td class="govuk-table__cell table-tree-view__parent-title govuk-!-width-one-half level-b-only-cell-1" scope="row">
+                                    <span class="table-tree-view__parent-button">
+                                      AMS Coherence and Impact - Global Health Policy Workshops
+                                    </span>
+                                  </td>
+                                  <td class="govuk-table__cell cell-2">
+                                    GCRF-CImGHPW
+                                  </td>
+                                  <td class="govuk-table__cell cell-3">
+                                    Spend in progress
+                                  </td>
+                                  <td class="govuk-table__cell cell-4">
+                                    <a class="govuk-link"
+                                      href="#">View<span
+                                        class="govuk-visually-hidden"> AMS Coherence and Impact - Global Health Policy Workshops</span></a>
+                                  </td>
+                                </tr>
+
+                              </table>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
