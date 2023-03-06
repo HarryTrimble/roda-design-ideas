@@ -1,0 +1,362 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Report - approved
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color: #1d70b8; text-align: left;">
+        <p class="govuk-body-l" style="margin-bottom: 0px;">
+          <strong class="govuk-tag govuk-tag" style="background-color: #fff; color: #1d70b8; margin-right: 5px;">Approved</strong><span class="govuk-body" style="color: #fff;"> report</span>
+        </p>
+        <br>
+        <h1 class="govuk-panel__title">
+          FQ4 2020-2021 Newton Fund report
+        </h1>
+        <p class="govuk-body-l">
+          <a href="#" class="govuk-link" style="color: #fff;">Academy of Medical Sciences</a>
+        </p>
+        <p class="govuk-body" style="color: #fff;">Q4 Report - FY 2020/21</p>
+        <p class="govuk-body" style="color: #fff;">Published 21 April 2021</p>
+
+        <button class="govuk-button" data-module="govuk-button" style="background-color: #1d70b8; color: #ffffff; box-shadow: 0 2px 0 #f3f2f1; border-color: #ffffff !important; margin-bottom: 0px;">
+          Download report CSV
+        </button>
+
+      </div>
+
+      <br><br>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <p class="govuk-body-s" style="margin-bottom: 10px;">Contents</p>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#activities">Activities</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#forecasts">Forecasts</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#actuals-and-refunds">Actuals / Refunds</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#variance">Variance</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#budgets">Budgets</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#comments">Comments</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-three-quarters">
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Summary report figures</caption>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">New activities added </th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Updated activities</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total of actuals</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">£8,865,569.18</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total of forecasts</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">£341,071.65</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total of refunds </th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      
+      <!-- activites section -->
+      <div class="govuk-summary-card" id="activities">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Activities</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <dl class="govuk-summary-list">
+
+            <table class="govuk-table">
+              <caption class="govuk-table__caption govuk-table__caption--m">New activities added in this report</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">RODA Identifier</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Title</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Action</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+              </tbody>
+            </table>
+
+            <br>
+
+            <table class="govuk-table">
+              <caption class="govuk-table__caption govuk-table__caption--m">Activities updated in this report</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">RODA Identifier</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Title</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Action</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+              </tbody>
+            </table>
+
+          </dl>
+        </div>
+      </div>
+
+      <!-- forecast section -->
+      <div class="govuk-summary-card" id="forecasts">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Forecast spend per activity</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <dl class="govuk-summary-list">
+
+            <p class="govuk-body">This page shows all the new or updated forecasts you have reported in RODA since the last reporting quarter.</p>
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">Activity</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">RODA Identifier </th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Financial Quarter</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Amount</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Academy of Medical Sciences Miscellaneous delivery costs</th>
+                  <td class="govuk-table__cell">NF-Del-DEL_Misc</td>
+                  <td class="govuk-table__cell">
+                    FQ1 2023-2024<br>
+                    FQ2 2023-2024
+                  </td>
+                  <td class="govuk-table__cell">
+                    £2,000.00<br>
+                    £2,000.00
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </dl>
+        </div>
+      </div>
+
+      <!-- actuals and refunds section -->
+      <div class="govuk-summary-card" id="actuals-and-refunds">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Actuals / Refunds</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <dl class="govuk-summary-list">
+
+            <p class="govuk-body">Actuals and refunds that have already been added to this report are listed below.</p>
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">Activity</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">RODA Identifier </th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Financial Quarter</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Amount</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Newton Advanced Fellowships 2014/15 - Brazil</th>
+                  <td class="govuk-table__cell">NF-BRNAF-BRA_NAF001</td>
+                  <td class="govuk-table__cell">       
+                    FQ4 2014-2015<br>
+                    FQ4 2015-2016
+                  </td>
+                  <td class="govuk-table__cell">
+                    £37,000.00<br>
+                    £37,000.00
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </dl>
+        </div>
+      </div>
+
+      <!-- variance -->
+      <div class="govuk-summary-card" id="variance">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Variance</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <dl class="govuk-summary-list">
+
+            <p class="govuk-body">The variance between forecasted and actual spend, including any adjustments, in this reporting cycle.</p>
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">RODA Identifier </th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Forecasted spend</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Actual spend</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Variance</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Comments</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">NF-Del-DEL_Misc</th>
+                  <td class="govuk-table__cell">£2,000.00</td>
+                  <td class="govuk-table__cell">       
+                    £4,981.90 
+                  </td>
+                  <td class="govuk-table__cell">       
+                    £2,981.90
+                  </td>
+                  <td class="govuk-table__cell">       
+                    <a class="govuk-link" href="#">
+                      View<span class="govuk-visually-hidden"> comments</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </dl>
+        </div>
+      </div>
+
+      <!-- budgets -->
+      <div class="govuk-summary-card" id="budgets">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Budgets</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <dl class="govuk-summary-list">
+
+            <p class="govuk-body">This page shows all the budgets you have added during this reporting cycle.</p>
+
+            <p class="govuk-body">There are no budgets created during this reporting cycle.</p>
+
+            <!-- can't find any budget data in training
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">RODA Identifier </th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Forecasted spend</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Actual spend</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Variance</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Comments</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">NF-Del-DEL_Misc</th>
+                  <td class="govuk-table__cell">£2,000.00</td>
+                  <td class="govuk-table__cell">       
+                    £4,981.90 
+                  </td>
+                  <td class="govuk-table__cell">       
+                    £2,981.90
+                  </td>
+                  <td class="govuk-table__cell">       
+                    <a class="govuk-link" href="#">
+                      View<span class="govuk-visually-hidden"> comments</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            -->
+
+          </dl>
+        </div>
+      </div>
+
+      <!-- comments -->
+      <div class="govuk-summary-card" id="comments">
+        <div class="govuk-summary-card__title-wrapper">
+          <h2 class="govuk-summary-card__title">Comments</h2>
+        </div>
+        <div class="govuk-summary-card__content">
+          <dl class="govuk-summary-list">
+
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">
+                    Activity RODA Identifier
+                  </th>
+                  <th scope="col" class="govuk-table__header">Date</th>
+                  <th scope="col" class="govuk-table__header">Type</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">Comment</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">NF-CNNIF-CHN_NIF005 </th>
+                  <td class="govuk-table__cell">15 Apr 2021</td>
+                  <td class="govuk-table__cell">Activity</td>
+                  <td class="govuk-table__cell">
+                    The slight underspend can be explained by one of our Newton International Fellows, supported under this programme of activity, prematurely terminating their award, having assumed a permanent position.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </dl>
+        </div>
+      </div>
+
+    </div>
+
+    <!--
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m" id="download">Download</h2>
+      <p class="govuk-body">Download a CSV file to review offline. For guidance on reviewing and submitting your report, see the <a href="#" class="govuk-link">guidance in the help centre (opens in new tab)</a></p>
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Download report as CSV file
+      </button>
+    </div>
+    -->
+
+  </div>
+{% endblock %}

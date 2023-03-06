@@ -1,0 +1,29 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Budget revisions
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Budget edited
+        </h1>
+        <div class="govuk-panel__body">
+          Current budget of FY 2023-2024 is: <br>
+          <strong>£81,000.00</strong>
+        </div>
+      </div>
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p class="govuk-body">
+        You can go back to <a class="govuk-link" href="activity">Academy of Medical Sciences Staff delivery costs</a>.
+      </p>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,170 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Upload confirmation
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <!--
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Reports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Activities</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Budgets</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Exports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Organisations</a>
+        </li>
+      </ul>
+    </div>
+    -->
+
+    <div class="govuk-grid-column-three-quarters">
+      
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Activity data uploaded to report
+          </h1>
+          <div class="govuk-panel__body">
+            <br><strong>FQ3 2022-2023 Other ODA report</strong><br>Medical Research Council<br>
+          </div>
+        </div>
+        
+        <p class="govuk-body">9 activities have been to <a href="../report/active-current" class="govuk-link">this report</a> by Medical Research Council</p>
+
+        <p class="govuk-body">We have sent you a confirmation email.</p>
+
+      <table class="govuk-table" id="error-details">
+        <caption class="govuk-table__caption govuk-table__caption--m">9 activities uploaded</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Activity</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text">Actuals</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--text">Refunds</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Date uploaded</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">ODA BEIS</th>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Transform</th>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Ad-hoc GC</th>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">DfE NI - GC</th>
+            <td class="govuk-table__cell govuk-table__cell--text">10</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">SFC - GCRF</th>
+            <td class="govuk-table__cell govuk-table__cell--text">22</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">ODA webbs</th>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">33</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">HEFCW</th>
+            <td class="govuk-table__cell govuk-table__cell--text">44</td>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Global Charity</th>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">UUKi Delivery</th>
+            <td class="govuk-table__cell govuk-table__cell--text"></td>
+            <td class="govuk-table__cell govuk-table__cell--text">10</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total</th>
+            <td class="govuk-table__cell govuk-table__cell--text">£76</td>
+            <td class="govuk-table__cell govuk-table__cell--text">£43</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">              
+              Just now
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p class="govuk-body">
+        The report will be submitted to data assurance team at BEIS in 24 days. You have until then to make any changes to the report. 
+      </p>
+
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important!
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            You have 24 days left to make any more updates to the report. 
+            <a class="govuk-notification-banner__link" href="../report/active-current">View current report</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+{% endblock %}

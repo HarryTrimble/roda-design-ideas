@@ -1,0 +1,119 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Report - approved
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+    <p style="margin-bottom: 0px;"><span class="govuk-!-font-weight-bold">Nadiya Kanaa</span>  |  BEIS<span style="float: right;"><a href="#" class="govuk-link">Sign out</a></span></p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Important
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <p class="govuk-notification-banner__heading">
+            You have 5 empty activities. <br><br>These must either be deleted or completed before a report can be submitted for approval.<br><br>
+            <a class="govuk-notification-banner__link" href="view">View activities</a>
+          </p>
+        </div>
+      </div>
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h2 class="govuk-heading-m" style="margin-bottom: 0px;">Search for activities</h2>
+        </legend>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="email">
+            Enter your search query
+          </label>
+          <div id="email-hint" class="govuk-hint">
+            You can search by RODA, Partner Organisation, BEIS, or IATI identifier, or by the activity's title          
+          </div>
+          <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1">
+        </div>
+      </fieldset>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+            <table class="govuk-table">
+              <caption class="govuk-table__caption govuk-table__caption--m">Partner organisations</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-third">Name</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Academy of Medical Sciences</th>
+                  <td class="govuk-table__cell">
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      Upload data<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      View activities<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      View exports<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#">
+                      View reports<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Academy of Medical Sciences</th>
+                  <td class="govuk-table__cell">
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      Upload data<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      View activities<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      View exports<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#">
+                      View reports<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">BEIS Finance</th>
+                  <td class="govuk-table__cell">
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      Upload data<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      View activities<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#" style="margin-right: 15px;">
+                      View exports<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                    <a class="govuk-link" href="#">
+                      View reports<span class="govuk-visually-hidden"> action</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+    </div>
+  </div>
+
+{% endblock %}
